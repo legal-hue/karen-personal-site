@@ -647,6 +647,45 @@ img { max-width: 100%; display: block; }
     display: block;
 }
 
+/* --- Press & Publications --- */
+.press-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+
+.press-item {
+    display: grid;
+    grid-template-columns: 180px 50px 1fr;
+    gap: 1.5rem;
+    align-items: baseline;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.press-outlet {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.press-year {
+    font-family: var(--serif);
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: var(--text-muted);
+}
+
+.press-title {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text);
+    line-height: 1.4;
+}
+
 /* --- Bridge --- */
 .bridge-text {
     font-size: 0.95rem;
@@ -799,6 +838,7 @@ img { max-width: 100%; display: block; }
     .featured-grid { grid-template-columns: 1fr 1fr; }
 
     .recognition-item { flex-direction: column; gap: 0.5rem; }
+    .press-item { grid-template-columns: 1fr; gap: 0.3rem; }
     .recognition-year { min-width: auto; }
 
     .footer-inner { flex-direction: column; gap: 1.5rem; text-align: center; }
